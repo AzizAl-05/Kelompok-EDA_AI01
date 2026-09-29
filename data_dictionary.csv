@@ -1,0 +1,39 @@
+nama_kolom,deskripsi,skala,kategori_data_pribadi,tindakan_penanganan
+Date,"Tanggal pelaporan, format bulan/hari/tahun, tersimpan sebagai teks",Interval,Bukan data pribadi (atribut wilayah atau waktu),"Ubah ke tipe tanggal, filter tahun 2022"
+Location ISO Code,Kode ISO wilayah (contoh ID-JK; IDN untuk nasional),Nominal,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai"
+Location,Nama wilayah: provinsi atau Indonesia,Nominal,Bukan data pribadi (atribut wilayah atau waktu),Buang baris Indonesia (nasional)
+New Cases,Kasus baru harian,Rasio,Bukan data pribadi (agregat wilayah),"Jumlahkan per provinsi selama 2022, sel harian tidak ditampilkan"
+New Deaths,Kematian baru harian,Rasio,Bukan data pribadi (agregat wilayah),"Jumlahkan per provinsi selama 2022, sel harian tidak ditampilkan"
+New Recovered,Kesembuhan baru harian,Rasio,Bukan data pribadi (agregat wilayah),"Simpan, tidak dipakai"
+New Active Cases,Perubahan jumlah kasus aktif harian,Interval,Bukan data pribadi (agregat wilayah),"Simpan, tidak dipakai"
+Total Cases,Kasus kumulatif sejak awal pandemi,Rasio,Bukan data pribadi (agregat wilayah),Dipakai hanya untuk cek konsistensi
+Total Deaths,Kematian kumulatif,Rasio,Bukan data pribadi (agregat wilayah),"Simpan, tidak dipakai"
+Total Recovered,Kesembuhan kumulatif; 288 baris lebih besar dari Total Cases,Rasio,Bukan data pribadi (agregat wilayah),"Catat sebagai anomali, tidak dipakai"
+Total Active Cases,Kasus aktif kumulatif; 479 baris bernilai negatif,Interval,Bukan data pribadi (agregat wilayah),"Catat sebagai anomali, tidak dipakai"
+Location Level,Tingkat wilayah: Province atau Country,Nominal,Bukan data pribadi (atribut wilayah atau waktu),Filter ke Province
+City or Regency,Kota atau kabupaten; kosong 100%,Nominal,Bukan data pribadi (atribut wilayah atau waktu),Buang dari data olahan
+Province,Nama provinsi; kosong untuk baris nasional,Nominal,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai (pakai Location)"
+Country,Selalu Indonesia,Nominal,Bukan data pribadi (atribut wilayah atau waktu),Buang (konstan)
+Continent,Selalu Asia,Nominal,Bukan data pribadi (atribut wilayah atau waktu),Buang (konstan)
+Island,Kelompok pulau (7 kelompok),Nominal,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, dipakai pertanyaan 3 dan 4"
+Time Zone,"Zona waktu (UTC+07:00, +08:00, +09:00)",Nominal,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai"
+Special Status,"Status khusus daerah (DKI, Istimewa, Khusus); sekitar 86% baris kosong",Nominal,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai"
+Total Regencies,Jumlah kabupaten,Rasio,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai"
+Total Cities,Jumlah kota,Rasio,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai"
+Total Districts,Jumlah kecamatan,Rasio,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai"
+Total Urban Villages,Jumlah kelurahan,Rasio,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai"
+Total Rural Villages,Jumlah desa,Rasio,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai"
+Area (km2),Luas wilayah dalam km2,Rasio,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai"
+Population,Jumlah penduduk,Rasio,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, dipakai sebagai penyebut per juta"
+Population Density,Kepadatan penduduk (jiwa per km2),Rasio,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, dipakai pertanyaan 2"
+Longitude,Bujur titik pusat wilayah (bukan lokasi individu),Interval,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai"
+Latitude,Lintang titik pusat wilayah (bukan lokasi individu),Interval,Bukan data pribadi (atribut wilayah atau waktu),"Simpan, tidak dipakai"
+New Cases per Million,Kasus baru harian per juta penduduk,Rasio,Bukan data pribadi (agregat wilayah),Tidak dipakai (dihitung ulang sendiri)
+Total Cases per Million,Kasus kumulatif per juta penduduk,Rasio,Bukan data pribadi (agregat wilayah),Tidak dipakai (bukan khusus 2022)
+New Deaths per Million,Kematian baru harian per juta penduduk,Rasio,Bukan data pribadi (agregat wilayah),Tidak dipakai
+Total Deaths per Million,Kematian kumulatif per juta penduduk,Rasio,Bukan data pribadi (agregat wilayah),Tidak dipakai
+Total Deaths per 100rb,Kematian kumulatif per 100 ribu penduduk,Rasio,Bukan data pribadi (agregat wilayah),Tidak dipakai
+Case Fatality Rate,Total Deaths dibagi Total Cases; tersimpan sebagai teks persen; 43 baris di atas 100%,Rasio,Bukan data pribadi (agregat wilayah),Tidak dipakai
+Case Recovered Rate,Total Recovered dibagi Total Cases; tersimpan sebagai teks persen,Rasio,Bukan data pribadi (agregat wilayah),Tidak dipakai
+Growth Factor of New Cases,Faktor pertumbuhan kasus baru; definisi persis perlu dikonfirmasi ke sumber,Rasio,Bukan data pribadi (agregat wilayah),Tidak dipakai
+Growth Factor of New Deaths,Faktor pertumbuhan kematian baru; definisi persis perlu dikonfirmasi ke sumber,Rasio,Bukan data pribadi (agregat wilayah),Tidak dipakai

@@ -1,0 +1,13 @@
+tahap,ukuran,nilai
+sebelum agregasi (provinsi-hari),k_kasus_harian,1
+sebelum agregasi (provinsi-hari),k_kematian_harian,1
+sebelum agregasi (provinsi-hari),baris_tepat_1_kasus,802
+sebelum agregasi (provinsi-hari),baris_1_sampai_4_kasus,2064
+sebelum agregasi (provinsi-hari),baris_tepat_1_kematian,1032
+sebelum agregasi (provinsi-hari),baris_berkematian,2599
+sebelum agregasi (provinsi-hari),baris_1_sampai_4_kematian,1953
+"sesudah agregasi (provinsi, 2022)",k_kasus_provinsi,2102
+"sesudah agregasi (provinsi, 2022)",provinsi_k_kasus,Gorontalo
+"sesudah agregasi (provinsi, 2022)",k_kematian_provinsi,20
+"sesudah agregasi (provinsi, 2022)",provinsi_k_kematian,Papua
+ambang,K_MIN,5
