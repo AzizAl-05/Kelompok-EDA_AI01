@@ -63,7 +63,7 @@ Setiap pertanyaan lolos tiga uji: **uji kolom** (kolom penjawab disebut namanya)
 
 ### 3.3 Uji tindak lanjut
 
-| # | Keputusan yang bisa diinformasikan | Pengambil keputusan|
+| # | Keputusan yang bisa diinformasikan | Pengambil keputusan |
 |---|------------------------------------|-------------------------------------------|
 | 1 | Provinsi mana yang dicek lebih dulu kesiapan tes, pelacakan, dan fasilitas kesehatannya untuk gelombang berikutnya | Kemenkes bersama Dinas Kesehatan provinsi |
 | 2 | Apakah kepadatan penduduk dipakai sebagai salah satu kriteria awal menentukan provinsi prioritas kesiapsiagaan | Kemenkes dan pemerintah provinsi |
@@ -121,3 +121,31 @@ Keterbatasan analisis:
 - Angka kasus bergantung pada kapasitas pengujian dan pelaporan tiap provinsi.
 
 ---
+
+## 6. Kamus Data
+
+Kamus data untuk seluruh 38 kolom dataset, termasuk kategori data pribadi dan tindakan penanganan tiap kolom, disimpan di `data_dictionary.csv`.
+
+Seluruh kolom pada dataset ini bukan data pribadi. Data berupa hitungan agregat per wilayah dan atribut wilayah atau waktu, tidak memuat nama, NIK, alamat, usia, atau jenis kelamin.
+
+---
+
+## 7. Penandaan dan Nilai k
+
+**Sebelum agregasi** (provinsi-hari, tahun 2022, 8.770 baris): k kasus harian = 1, k kematian harian = 1. Dari jumlah itu, 802 baris berisi tepat 1 kasus baru, dan 1.032 baris berisi tepat 1 kematian baru.
+
+**Sesudah agregasi** (satu baris per provinsi untuk seluruh periode 2022): k kasus = 2.102 (Gorontalo), k kematian = 20 (Papua). Ambang yang dipakai K_MIN = 5. Status: **LULUS**.
+
+---
+
+## 8. Daftar Periksa Sebelum `git push`
+
+- [ ] `data/raw/` masuk `.gitignore` dan tidak ikut ter-commit
+- [ ] Tidak ada nama, NIK, nomor telepon, surel, atau alamat pada berkas mana pun
+- [ ] Keluaran sel yang sempat menampilkan data pribadi sudah dibersihkan
+- [ ] Garam hash tidak tertulis di dalam notebook
+- [ ] Kamus data memuat kategori dan tindakan untuk setiap kolom
+- [ ] Nilai k pada data yang diunggah sudah dihitung dan dicatat
+- [ ] Bila masih ragu: repositori dibuat privat
+
+Menghapus berkas lalu commit ulang tidak menghilangkan data dari riwayat Git. Periksa sebelum commit pertama, bukan sesudahnya.
