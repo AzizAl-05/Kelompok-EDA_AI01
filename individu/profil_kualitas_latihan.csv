@@ -1,0 +1,7 @@
+dimensi,kolom,masalah,jumlah,persen,keparahan,rencana
+Kelengkapan,berat_kg,Kosong untuk kategori non-fisik (MAR),351,22.75,Rendah,"Tandai tidak berlaku, bukan diisi"
+Keunikan,seluruh kolom,Baris duplikat persis,24,1.56,Sedang,"Hapus, simpan satu"
+Kelengkapan,saldo_simpanan,"Kosong, diduga MNAR",159,10.3,Tinggi,Jangan diimputasi; tanyakan ke pengurus koperasi
+Kelengkapan,rating_layanan,Placeholder -999,49,3.18,Tinggi,Ubah menjadi NaN sebelum dihitung
+Validitas,jumlah,Nilai nol atau negatif,29,1.88,Tinggi,"Telusuri apakah retur; bila bukan, keluarkan dari analisis"
+Konsistensi,kategori,Satu kategori ditulis beberapa cara,13,0.84,Tinggi,Seragamkan; sinonim diputuskan manual
