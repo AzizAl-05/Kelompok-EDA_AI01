@@ -11,3 +11,9 @@ sebelum agregasi (provinsi-hari),baris_1_sampai_4_kematian,1953
 "sesudah agregasi (provinsi, 2022)",k_kematian_provinsi,20
 "sesudah agregasi (provinsi, 2022)",provinsi_k_kematian,Papua
 ambang,K_MIN,5
+tabel yang ditampilkan,k_kasus_terkecil_per_pulau,6630
+tabel yang ditampilkan,pulau_k_kasus,Maluku
+tabel yang ditampilkan,k_kematian_terkecil_per_pulau,48
+tabel yang ditampilkan,pulau_k_kematian,Papua
+tabel yang ditampilkan,k_kasus_terkecil_per_kelompok_kepadatan,133430
+tabel yang ditampilkan,k_kematian_terkecil_per_kelompok_kepadatan,1243
