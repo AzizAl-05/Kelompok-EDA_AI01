@@ -32,7 +32,7 @@ Proyek tim untuk menganalisis apakah kepadatan penduduk dan letak pulau berkaita
 
 ### 2.1 Kalimat sitasi
 
-> Hendratno. *COVID-19 Indonesia Dataset*. Kaggle. https://www.kaggle.com/datasets/hendratno/covid19-indonesia. Diakses [tanggal pengambilan]. Data dikompilasi dari covid19.go.id, kemendagri.go.id, bps.go.id, dan bnpb-inacovid19.hub.arcgis.com. Lisensi CC BY-NC-SA 4.0.
+> Hendratno. *COVID-19 Indonesia Dataset*. Kaggle. https://www.kaggle.com/datasets/hendratno/covid19-indonesia. Diakses [28 Spetember 2026]. Data dikompilasi dari covid19.go.id, kemendagri.go.id, bps.go.id, dan bnpb-inacovid19.hub.arcgis.com. Lisensi CC BY-NC-SA 4.0.
 
 ### 2.2 Dasar pemakaian dan konsekuensi lisensi
 
@@ -48,53 +48,56 @@ Lisensi **CC BY-NC-SA 4.0** berarti:
 
 ### 3.1 Pertanyaan payung
 
-> Apakah kepadatan penduduk dan letak pulau berkaitan dengan perbedaan jumlah kasus baru per juta penduduk antarprovinsi selama 1 Januari sampai 15 September 2022?
+> Daerah seperti apa di Indonesia yang paling banyak terkena COVID-19 pada tahun 2022 (1 Januari sampai 15 September)?
 
 ### 3.2 Pertanyaan turunan
 
 Setiap pertanyaan lolos tiga uji: **uji kolom** (kolom penjawab disebut namanya), **uji bentuk jawaban** (angka, peringkat, perbandingan, atau sebaran), dan **uji tindak lanjut** (apa yang bisa diputuskan dan oleh siapa, lihat 3.3).
 
-| # | Pertanyaan | Kolom pendukung | Cara menjawab |
+| # | Pertanyaan | Kolom pendukung | jawaban |
 |---|-----------|-----------------|---------------|
-| 1 | Provinsi mana yang punya 5 nilai kasus 2022 per juta tertinggi dan 5 terendah? | `Location`, `New Cases`, `Date`, `Population` | Jumlahkan `New Cases` tahun 2022 per provinsi, bagi dengan `Population`, urutkan |
-| 2 | Apakah provinsi dengan `Population Density` lebih tinggi cenderung punya kasus 2022 per juta lebih tinggi? | `Population Density`, `New Cases`, `Population` | Korelasi pada 34 provinsi dan scatter plot, dijalankan dengan dan tanpa DKI Jakarta |
-| 3 | Apakah rata-rata kasus 2022 per juta berbeda antara 7 kelompok `Island`? | `Island`, `New Cases`, `Population` | Rata-rata per pulau, bandingkan dengan bar chart |
-| 4 | Apakah rata-rata kematian 2022 per juta berbeda antara 7 kelompok `Island`? | `Island`, `New Deaths`, `Population` | Rata-rata per pulau, bandingkan dengan bar chart |
+| 1 | Provinsi mana yang paling banyak dan paling sedikit terkena COVID-19? | `Location`, `New Cases`, `Population`, `Date` | Jumlahkan `New Cases` tahun 2022 per provinsi, bagi dengan `Population`, ambil 5 teratas dan 5 terbawah |
+| 2 | Apakah provinsi yang lebih padat penduduknya juga lebih banyak terkena? | `Population Density`, `New Cases`, `Population` | Bagi 34 provinsi menjadi 3 kelompok kepadatan (jarang, sedang, padat), bandingkan nilai tengahnya |
+| 3 | Pulau mana yang paling banyak terkena COVID-19? | `Island`, `New Cases`, `Population` | Jumlahkan kasus dan penduduk per pulau, bandingkan kasus per 1 juta penduduk |
+| 4 | Dari setiap 1.000 orang yang tercatat terkena, berapa yang meninggal, dan apakah berbeda antarpulau? | `Island`, `New Cases`, `New Deaths` | Jumlahkan kematian dan kasus per pulau, hitung kematian per 1.000 kasus |
 
 ### 3.3 Uji tindak lanjut
 
 | # | Keputusan yang bisa diinformasikan | Pengambil keputusan |
-|---|------------------------------------|-------------------------------------------|
-| 1 | Provinsi mana yang dicek lebih dulu kesiapan tes, pelacakan, dan fasilitas kesehatannya untuk gelombang berikutnya | Kemenkes bersama Dinas Kesehatan provinsi |
-| 2 | Apakah kepadatan penduduk dipakai sebagai salah satu kriteria awal menentukan provinsi prioritas kesiapsiagaan | Kemenkes dan pemerintah provinsi |
-| 3 | Apakah perencanaan logistik dan kesiapsiagaan dipisah per pulau | Kemenkes (perencanaan nasional) dan Dinas Kesehatan provinsi |
-| 4 | Apakah pulau tertentu perlu penguatan layanan rujukan dan perawatan intensif | Kemenkes dan Dinas Kesehatan provinsi |
+|---|------------------------------------|---------------------|
+| 1 | Provinsi mana yang dicek lebih dulu kesiapan tes dan rumah sakitnya | Kemenkes bersama Dinas Kesehatan provinsi |
+| 2 | Apakah kepadatan penduduk dijadikan salah satu pertimbangan awal memilih provinsi prioritas | Kemenkes dan pemerintah provinsi |
+| 3 | Apakah persiapan dan pembagian logistik dibedakan per pulau | Kemenkes dan Dinas Kesehatan provinsi |
+| 4 | Pulau mana yang layanan rujukan dan perawatan intensifnya perlu diperkuat | Kemenkes dan Dinas Kesehatan provinsi |
 
-Semua hasil hanya menunjukkan keterkaitan, jadi dipakai untuk memilih prioritas pemeriksaan lebih lanjut, bukan untuk menyimpulkan penyebab. Angka kasus yang tinggi juga bisa mencerminkan banyaknya pengujian di provinsi itu.
+Hasil hanya menunjukkan pola, bukan sebab-akibat. Jumlah kasus yang tercatat juga dipengaruhi banyaknya orang yang dites di tiap daerah.
 
-### 3.4 Pertanyaan yang dicoret (langkah 3 latihan)
+### 3.4 Pertanyaan yang dicoret
 
 | Pertanyaan yang dicoret | Alasan |
 |-------------------------|--------|
 | Apakah vaksinasi menurunkan angka kematian antarprovinsi? | Gagal uji kolom: tidak ada kolom vaksinasi di dataset |
 
-### 3.5 Definisi ukuran
+### 3.5 Arti istilah
 
-| Ukuran | Rumus | Kolom sumber |
-|--------|-------|--------------|
-| Kasus 2022 per juta | jumlah `New Cases` (1 Jan 2022 s/d akhir data) ÷ `Population` × 1.000.000 | `New Cases`, `Population` |
-| Kematian 2022 per juta | jumlah `New Deaths` (1 Jan 2022 s/d akhir data) ÷ `Population` × 1.000.000 | `New Deaths`, `Population` |
+| Istilah | Arti |
+|---------|------|
+| Terkena | Kasus COVID-19 yang tercatat di data (kolom `New Cases`) |
+| Per 1 juta penduduk | Jumlah kasus ÷ `Population` × 1.000.000, supaya provinsi besar dan kecil bisa dibandingkan adil |
+| Kelompok kepadatan | 34 provinsi diurutkan dari paling jarang sampai paling padat, lalu dibagi 3 kelompok hampir sama besar: Jarang (12), Sedang (11), Padat (11) |
+| Nilai tengah (median) | Nilai yang berada di tengah kalau provinsi diurutkan. Dipakai karena DKI Jakarta sangat ekstrem, sehingga rata-rata biasa bisa menyesatkan |
+| Kematian per 1.000 kasus | Jumlah kematian ÷ jumlah kasus tercatat × 1.000 |
 
-`Total Cases per Million` **tidak dipakai** karena menghitung kasus kumulatif sejak Maret 2020, bukan hanya 2022.
+`Total Cases per Million` tidak dipakai karena menghitung kasus kumulatif sejak Maret 2020, bukan hanya 2022.
 
 ---
 
-## 4. Aturan Pengolahan Bersama
+## 4. Aturan Pengolahan
 
 1. Satuan analisis adalah 34 provinsi. Baris dengan `Location Level` = `Country` dibuang agar tidak terhitung ganda.
-2. Periode analisis: 1 Januari sampai 15 September 2022. Sebut periode ini di setiap judul grafik dan tabel.
-3. Kolom `Date` berformat bulan/hari/tahun. Ubah ke tipe tanggal sebelum diurutkan.
-4. Pertanyaan 2 selalu dijalankan dua kali: dengan dan tanpa DKI Jakarta.
+2. Periode analisis: 1 Januari sampai 15 September 2022. Periode ini disebut di setiap judul grafik dan tabel.
+3. Kolom `Date` berformat bulan/hari/tahun, diubah ke tipe tanggal sebelum diproses.
+4. Angka per pulau dihitung dari total kasus dan total penduduk seluruh provinsi di pulau itu, bukan rata-rata angka tiap provinsi.
 5. Berkas mentah tidak pernah diubah dan tidak pernah di-commit. Semua pembersihan dilakukan lewat kode.
 
 ---
@@ -110,15 +113,15 @@ Temuan pemeriksaan awal pada berkas:
 - Kolom `City or Regency` kosong seluruhnya, jadi tidak ada analisis tingkat kota atau kabupaten.
 - Sekitar 18% baris tahun 2022 punya `New Cases` = 0. Bisa berarti tidak ada kasus atau belum dilaporkan.
 - Gorontalo dan Sulawesi Barat kurang satu hari pada 2022 (berakhir 14 September).
-- DKI Jakarta jauh di atas provinsi lain: kasus 2022 per juta sekitar 50.452, sedangkan median sekitar 4.233.
 
 Keterbatasan analisis:
 
-- Hanya menunjukkan **keterkaitan**, bukan sebab-akibat.
+- Hanya menunjukkan pola, bukan sebab-akibat.
 - Tidak ada data vaksinasi, usia, jenis kelamin, kebijakan, atau fasilitas kesehatan.
-- Kelompok pulau berukuran tidak seimbang, sehingga rata-rata per pulau dibaca hati-hati.
+- DKI Jakarta jauh di atas provinsi lain (sekitar 50.452 kasus per 1 juta penduduk, sedangkan nilai tengah seluruh provinsi sekitar 4.233), sehingga hasil per pulau untuk Jawa sebagian besar dipengaruhi Jakarta.
+- Pulau Maluku dan Papua masing-masing hanya terdiri dari 2 provinsi, sehingga angkanya mudah berubah oleh satu provinsi saja.
+- Jumlah kasus yang tercatat bergantung pada banyaknya tes dan pelaporan di tiap provinsi.
 - Periode 2022 hanya mewakili satu fase pandemi, jadi kesimpulan tidak digeneralisasi ke seluruh pandemi.
-- Angka kasus bergantung pada kapasitas pengujian dan pelaporan tiap provinsi.
 
 ---
 
@@ -135,6 +138,8 @@ Seluruh kolom pada dataset ini bukan data pribadi. Data berupa hitungan agregat 
 **Sebelum agregasi** (provinsi-hari, tahun 2022, 8.770 baris): k kasus harian = 1, k kematian harian = 1. Dari jumlah itu, 802 baris berisi tepat 1 kasus baru, dan 1.032 baris berisi tepat 1 kematian baru.
 
 **Sesudah agregasi** (satu baris per provinsi untuk seluruh periode 2022): k kasus = 2.102 (Gorontalo), k kematian = 20 (Papua). Ambang yang dipakai K_MIN = 5. Status: **LULUS**.
+
+**Tabel yang ditampilkan** (per pulau dan per kelompok kepadatan): k kasus terkecil = 6.630 (Maluku), k kematian terkecil = 48 (Papua). Semuanya di atas K_MIN = 5. Status: **LULUS**. Angka k ini tercatat di `data/processed/catatan_k.csv`.
 
 ---
 
