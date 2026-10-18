@@ -1,0 +1,18 @@
+jenis,aturan,baris_dilanggar
+Rentang,New Cases tidak boleh negatif (kasus baru tidak bisa kurang dari 0),0
+Rentang,New Deaths tidak boleh negatif,0
+Rentang,New Recovered tidak boleh negatif,0
+Rentang,Population harus lebih dari 0,0
+Rentang,Population Density harus lebih dari 0,0
+Rentang,Total Active Cases tidak boleh negatif (kasus aktif tidak bisa kurang dari 0),479
+Rentang,Case Fatality Rate harus antara 0 dan 100 persen,43
+Rentang,Case Recovered Rate harus antara 0 dan 100 persen,288
+Rentang,Tanggal tidak boleh sebelum 1 Maret 2020 atau setelah tanggal pengambilan data (28 September 2026),0
+Hubungan,Total Deaths + Total Recovered tidak boleh melebihi Total Cases,479
+Hubungan,Total Deaths tidak boleh melebihi Total Cases,43
+Hubungan,Total Active Cases = Total Cases - Total Deaths - Total Recovered,0
+Hubungan,Total Cases hari ini - kemarin = New Cases (pada lokasi yang sama),0
+Hubungan,Total Cases tidak boleh turun dari hari sebelumnya,0
+Hubungan,Population Density = Population / Area (selisih paling banyak 1 persen),0
+Waktu,Tanggal pada satu lokasi harus berurutan tanpa lompatan,0
+Hubungan,Jumlah New Cases 34 provinsi = New Cases baris nasional (tanggal yang sama),715

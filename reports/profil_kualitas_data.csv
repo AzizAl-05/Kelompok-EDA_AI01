@@ -1,0 +1,16 @@
+dimensi,kolom,masalah,jumlah,persen,keparahan,rencana
+Kelengkapan,City or Regency,"Kosong seluruhnya, tidak pernah diisi (struktural)",31822,100.0,Rendah,Tidak dipakai; buang dari data olahan dan catat sebagai keterbatasan (tidak ada analisis tingkat kota)
+Validitas,"Case Fatality Rate, Case Recovered Rate",Tersimpan sebagai teks berformat persen,31822,100.0,Rendah,Ubah ke angka bila dipakai; saat ini tidak dipakai
+Kelengkapan,Special Status,Kosong untuk provinsi tanpa status khusus (MAR),27264,85.68,Rendah,"Tandai ""tidak ada"", bukan diisi"
+Kelengkapan,Growth Factor of New Deaths,Kosong bila kemarin 0 dan hari ini lebih dari 0 (dibagi nol) atau hari pertama (MAR),3447,10.83,Rendah,"Biarkan kosong, nilainya memang tidak terdefinisi; kolom tidak dipakai"
+Kelengkapan,"Total Rural Villages, Total Cities, Total Urban Villages","Kosong untuk satu provinsi pada tiap kolom (DKI Jakarta, Sulawesi Barat, Aceh)",2734,8.59,Rendah,Tandai tidak berlaku; kolom tidak dipakai
+Kelengkapan,Growth Factor of New Cases,Kosong bila kemarin 0 dan hari ini lebih dari 0 (dibagi nol) atau hari pertama (MAR),1939,6.09,Rendah,"Biarkan kosong, nilainya memang tidak terdefinisi; kolom tidak dipakai"
+Validitas,Case Recovered Rate,Di atas 100% (bagian dari baris pelanggaran Akurasi di bawah),288,0.91,Rendah,Jangan dipakai
+Validitas,Case Fatality Rate,Di atas 100% (bagian dari baris pelanggaran Akurasi di bawah),43,0.14,Rendah,Jangan dipakai; hitung ulang dari New Deaths dan New Cases
+Kelengkapan,Date,"Data Gorontalo dan Sulawesi Barat berakhir 14 September, provinsi lain 15 September",2,0.01,Rendah,Catat sebagai keterbatasan; tidak ditambal
+Validitas,Date,"Tersimpan sebagai teks, bukan tanggal (format bulan/hari/tahun, sudah diverifikasi)",31822,100.0,Sedang,Ubah dengan format %m/%d/%Y lalu periksa rentang bulannya
+Kelengkapan,New Cases,Bernilai 0 pada baris provinsi; nol sejati tidak bisa dibedakan dari hari tanpa pelaporan,4098,12.88,Sedang,"Jangan diubah; total periode tetap benar. Hindari analisis harian pada provinsi kecil, tanyakan ke kompilator"
+Kelengkapan,"Province, Island, Time Zone",Kosong pada baris nasional (MAR),929,2.92,Sedang,Saring Location Level = Province sebelum mengelompokkan menurut Island
+Akurasi,New Cases (provinsi vs nasional),Jumlah 34 provinsi tidak sama dengan baris nasional pada tanggal yang sama (baris nasional yang berbeda),715,2.25,Sedang,Pakai provinsi saja dan jangan mencampur dengan baris nasional; tanyakan ke kompilator
+Akurasi,"Total Deaths, Total Recovered, Total Cases",Meninggal + sembuh melebihi total kasus; sama dengan kasus aktif negatif,479,1.51,Sedang,"Analisis memakai New Cases dan New Deaths, bukan kolom Total; tandai baris ini dan catat sebagai keterbatasan"
+Konsistensi,"Location, Location Level",Baris nasional (Indonesia) bercampur dengan baris provinsi; menjumlahkan semua baris menghitung ganda,929,2.92,Tinggi,Saring Location Level = Province sebelum agregasi
