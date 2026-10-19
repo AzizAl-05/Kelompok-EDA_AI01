@@ -1,0 +1,12 @@
+# Colab / Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Rahasia: jangan pernah di-commit
+.env
+*token*
+
+# Data mentah tidak ikut diunggah (aturan rubrik M2)
+data/raw/
