@@ -3,9 +3,9 @@ Mata Kuliah Exploratory Data Analysis 2026-1 (A) - Hilmy Abidzar Tawakal, S.T., 
 
 ## AnggotaTim
 
-| No | Nama | Inisial |
+| No | Nama | Peran |
 |----|------|---------|
-| 1 | [Abdul Aziz Al Palembani] | [Aziz]
-| 2 | [Fahri Mulyadi] | [Fahri] 
-| 3 | [Lukman Maruf] | [Lukman] 
-| 4 | [Nicha Amelia SRG] | [Nicha]
+| 1 | [Abdul Aziz Al Palembani] | [Analisis]
+| 2 | [Fahri Mulyadi] | [Koordinator] 
+| 3 | [Lukman Maruf] | [Data Engginer] 
+| 4 | [Nicha Amelia SRG] | [Penulis]
