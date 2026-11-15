@@ -1,0 +1,9 @@
+kolom,persen_kosong,dugaan,dasar_dugaan
+City or Regency,100.0,Tidak dapat dinilai (kosong struktural),"Kosong 100%, jadi tidak ada baris terisi untuk dibandingkan. Deskripsi dataset di Kaggle menyebut data tingkat kota hanya disediakan bila diperlukan pada provinsi tertentu, sehingga kolom ini tampaknya memang tidak pernah diisi."
+Special Status,85.7,MAR,"Terbukti dari data: hanya 5 provinsi yang terisi (Aceh, DKI Jakarta, DI Yogyakarta, Papua, Papua Barat), dan di provinsi lain 100% kosong. Kosongnya mengikuti kolom Location, yaitu provinsi tanpa status khusus."
+Growth Factor of New Deaths,10.8,MAR,"Terbukti dari data: kosong 100% pada hari pertama lokasi dan bila kematian baru kemarin 0 sedangkan hari ini lebih dari 0 (pembagian dengan nol), dan 0% pada keadaan lain. Nilainya tidak terdefinisi, bukan hilang."
+Growth Factor of New Cases,6.1,MAR,"Sama seperti kolom kematian: kosong 100% pada hari pertama lokasi dan bila kasus baru kemarin 0 sedangkan hari ini lebih dari 0 (pembagian dengan nol), dan 0% pada keadaan lain."
+"Province, Island, Time Zone",2.9,"MAR (di bawah 5%, sebagai informasi)",Kosong 100% pada baris nasional (Location Level = Country) dan 0% pada baris provinsi.
+Total Rural Villages,2.9,"MAR (di bawah 5%, sebagai informasi)","Kosong hanya untuk DKI Jakarta. Jakarta hanya memiliki kelurahan, tidak memiliki desa."
+Total Cities,2.8,"MAR (di bawah 5%, sebagai informasi)","Kosong hanya untuk Sulawesi Barat, provinsi yang tidak memiliki kota."
+Total Urban Villages,2.8,"MAR (di bawah 5%, sebagai informasi)",Kosong hanya untuk Aceh. Alasannya belum dikonfirmasi ke sumber data.
