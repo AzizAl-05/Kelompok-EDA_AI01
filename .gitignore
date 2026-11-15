@@ -1,6 +1,15 @@
-data/raw/
+# Colab / Jupyter
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
+.venv/
 .DS_Store
 Thumbs.db
+
+# Rahasia: jangan pernah di-commit
+.env
+*token*
+
+# Data mentah tidak ikut diunggah (aturan rubrik M2); hanya petunjuknya yang di-commit
+data/raw/*
+!data/raw/README.md

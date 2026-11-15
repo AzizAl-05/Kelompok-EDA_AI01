@@ -1,0 +1,8 @@
+# Pustaka yang dipakai notebook 00-02 (diuji dengan Python 3.12; juga berjalan di Colab)
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+scipy>=1.11
+jupyter
+nbconvert
+ipykernel
