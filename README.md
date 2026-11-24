@@ -13,9 +13,9 @@ Proyek tim untuk menganalisis apakah kepadatan penduduk dan letak pulau berkaita
 | No | Nama | Peran saat ini |
 |----|------|----------------|
 | 1 | Abdul Aziz Al Palembani | Analis |
-| 2 | Fahri Mulyadi | Koordinator |
+| 2 | Fahri Mulyadi | Penulis |
 | 3 | Lukman Maruf | Data Engineer |
-| 4 | Nicha Amelia SRG | Penulis |
+| 4 | Nicha Amelia SRG | Koordinator |
 
 ### Pembagian peran per milestone
 
