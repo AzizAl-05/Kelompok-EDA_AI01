@@ -1,0 +1,16 @@
+variabel_1,variabel_2,n,pearson_r,pearson_p,spearman_rho,spearman_p
+kepadatan,kasus_per_juta,34,0.876718,0.0,0.226585,0.197528
+luas_km2,kepadatan,34,-0.207281,0.23949,-0.707563,3e-06
+penduduk,kepadatan,34,0.1456,0.411291,0.624752,7.8e-05
+kepadatan,kematian_per_1000_kasus,34,-0.198244,0.26105,0.103438,0.560469
+kepadatan,kasus,34,0.764546,0.0,0.618029,9.8e-05
+penduduk,kasus,34,0.65439,2.7e-05,0.790069,0.0
+luas_km2,penduduk,34,-0.088913,0.61704,0.0411,0.817481
+kematian_per_1000_kasus,kasus_per_juta,34,-0.37783,0.027588,-0.507716,0.002176
+luas_km2,kasus,34,-0.207572,0.238816,-0.094882,0.593506
+luas_km2,kematian_per_1000_kasus,34,-0.277335,0.112294,-0.166081,0.34787
+penduduk,kasus_per_juta,34,0.065226,0.713996,0.126967,0.474268
+penduduk,kematian_per_1000_kasus,34,0.014662,0.934407,-0.045378,0.798853
+kasus_per_juta,kasus,34,0.727222,1e-06,0.670283,1.4e-05
+luas_km2,kasus_per_juta,34,-0.203273,0.2489,-0.147135,0.406323
+kematian_per_1000_kasus,kasus,34,-0.300346,0.084365,-0.278839,0.11028

@@ -35,7 +35,7 @@ Peran **bergilir** tiap milestone (tidak boleh satu orang memegang peran yang sa
 |---|---|---|
 | M1 | `reports/M1_Laporan_Kelompok.pdf`, `data_dictionary.md`, `notebooks/00_analisis_awal_m1.ipynb` | selesai (proposal ≤5 hlm dengan rencana kerja per milestone: [belum]) |
 | M2 | `reports/M2_Data_Quality_Report.*`, `notebooks/01_quality`, `02_cleaning`, `cleaning_log.md` | selesai, direvisi 14 Nov 2026 (lihat `cleaning_log.md`) |
-| M3 | `notebooks/03_univariate` (Pertemuan 6, selesai), `04_multivariate` (Pertemuan 7), slide progres | sebagian: 03 selesai, 04 dan slide belum |
+| M3 | `notebooks/03_univariate` (Pertemuan 6), `04_multivariate` (Pertemuan 7), slide progres | notebook 03 dan 04 selesai; slide progres belum |
 | M4 | `knime/` | belum |
 | M5 | `notebooks/05_advanced`, laporan akhir | belum |
 
@@ -52,9 +52,10 @@ jupyter nbconvert --to notebook --execute --inplace notebooks/01_quality.ipynb
 jupyter nbconvert --to notebook --execute --inplace notebooks/02_cleaning.ipynb    # menghasilkan data/processed/covid_provinsi_bersih.csv
 jupyter nbconvert --to notebook --execute --inplace notebooks/00_analisis_awal_m1.ipynb   # analisis awal Q1-Q4 (M1); 03 menguji tabelnya
 jupyter nbconvert --to notebook --execute --inplace notebooks/03_univariate.ipynb          # butuh keluaran 00 dan 02; menulis reports/p6_*.csv
+jupyter nbconvert --to notebook --execute --inplace notebooks/04_multivariate.ipynb        # butuh keluaran 00 dan 02; menulis reports/p7_*.csv
 ```
 
-Notebook dapat dijalankan dari akar repositori atau dari folder `notebooks/`. Urutan wajib: 01 → 02 → 00 → 03. Notebook 04–05 dan workflow KNIME dibuat pada milestone berikutnya.
+Notebook dapat dijalankan dari akar repositori atau dari folder `notebooks/`. Urutan wajib: 01 → 02 → 00 → 03 → 04. Notebook 05 dan workflow KNIME dibuat pada milestone berikutnya.
 
 ## Struktur repositori
 
@@ -62,7 +63,7 @@ Notebook dapat dijalankan dari akar repositori atau dari folder `notebooks/`. Ur
 README.md  requirements.txt  data_dictionary.md  cleaning_log.md  AI_usage_log.md
 data/raw/         data asli (TIDAK di-commit; lihat data/raw/README.md)
 data/processed/   hasil pembersihan (covid_provinsi_bersih.csv, covid_nasional.csv) dan keluaran analisis awal M1
-notebooks/        00_analisis_awal_m1, 01_quality, 02_cleaning, 03_univariate (04-05 menyusul)
+notebooks/        00_analisis_awal_m1, 01_quality, 02_cleaning, 03_univariate, 04_multivariate (05 menyusul)
 knime/            workflow .knwf (M4)
 reports/          laporan M1, M2; figures/ (grafik); tabel_m1/ (tabel analisis awal)
 arsip/            praktikum individu per pertemuan dan kamus data M1 asli (bukan bagian penilaian project)
