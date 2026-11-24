@@ -1,0 +1,17 @@
+variabel,provinsi,nilai
+kasus,Banten,201049.0
+kasus,DKI Jakarta,547214.0
+kasus,Jawa Barat,464881.0
+kasus,Jawa Tengah,149494.0
+kasus,Jawa Timur,201480.0
+kasus_per_juta,Banten,18750.42
+kasus_per_juta,DKI Jakarta,50452.4
+kasus_per_juta,Daerah Istimewa Yogyakarta,18537.52
+kepadatan,Bali,729.43
+kepadatan,Banten,1109.64
+kepadatan,DKI Jakarta,16334.31
+kepadatan,Daerah Istimewa Yogyakarta,1158.9
+kepadatan,Jawa Barat,1276.55
+kepadatan,Jawa Tengah,1108.64
+kepadatan,Jawa Timur,846.78
+kematian_per_1000_kasus,Aceh,28.0

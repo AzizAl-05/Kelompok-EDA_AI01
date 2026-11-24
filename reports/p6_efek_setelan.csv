@@ -1,0 +1,7 @@
+variabel,std ddof=1 (sampel),std ddof=0 (populasi),selisih std (%),skew pandas (terkoreksi),skew SciPy (tak terkoreksi),selisih skew (%),kurt pandas,kurt SciPy
+new_cases (harian),1013.2443,1013.1866,-0.0057,8.4766,8.4751,-0.0171,89.0208,88.9694
+new_deaths (harian),5.9889,5.9885,-0.0057,8.7754,8.7739,-0.0171,106.9223,106.8607
+kasus (provinsi),123616.7306,121785.2704,-1.4816,3.0929,2.9547,-4.467,9.4987,7.9868
+kasus_per_juta (provinsi),9014.1668,8880.6162,-1.4816,3.6325,3.4702,-4.467,16.1589,13.707
+kepadatan (provinsi),2780.3566,2739.1638,-1.4816,5.6656,5.4125,-4.467,32.6449,27.8665
+kematian_per_1000_kasus (provinsi),5.4483,5.3676,-1.4816,1.1486,1.0973,-4.467,2.9717,2.3809
